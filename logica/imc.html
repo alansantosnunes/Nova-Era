@@ -1,0 +1,48 @@
+<meta charset="UTF-8">
+
+<script>
+	
+	function pulaLinha() {
+
+		document.write("<br>");	
+		document.write("<br>");	
+	}
+
+	function mostra(frase) {
+
+		document.write(frase);
+		pulaLinha();
+	}
+
+	function calculaImc(altura, peso) {
+
+		return peso / (altura * altura);
+	}
+
+	var nome = prompt("Informe o seu nome");
+	var alturaInformada = prompt(nome + ", Informe sua altura");
+	var pesoInformado = prompt(nome + ", Informe o seu peso");
+
+	var imc = calculaImc(alturaInformada, pesoInformado);
+
+	document.write(nome + ", o seu IMC calculado é " + imc);
+
+	pulaLinha();
+
+	document.write("Segue a tabela com os IMC ideais e acima do peso: ");
+
+	pulaLinha();
+
+	document.write("Entre 18,5 e 24,9 = Normal. ");
+	pulaLinha();
+	document.write("Entre 25,0 e 29,9 = Sobrepeso. ");
+	pulaLinha();
+	document.write("Acima de 30,0 = Obesidade. ");
+	pulaLinha();
+	document.write("Maior que 40,0 = Obesidade grave. ");
+
+</script>
+
+
+
+
